@@ -1,0 +1,71 @@
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<style type="text/css">
+		*{
+			box-sizing:border-box;
+		}
+	</style>
+
+</head>
+
+
+<body>
+	
+<div style="position:relative">
+<div style="position:absolute;display:flex;width:100%;max-width:1026px;align-items:center;
+				padding:20px">
+
+			<!-- player health bar -->
+		<div style="position:relative;width:100%;display:flex;justify-content:flex-end;
+		border:4px outset white;">
+
+			<div style="background-color:#E7E5E4;height:40px;width:100%"></div>
+			<div id="playerbar" style="background-color:#22C55E;height:40px;position:absolute;
+			top:0;bottom:0;right:0;width:100%"></div>
+
+		</div>
+
+		<!-- timer -->
+		<div id = 'timer'style="background-color:black;width:100px;height:70px;flex-shrink:0;
+		display:flex;align-items:center;justify-content:center;color:white;border:4px inset white;
+		font-family: 'Abel', sans-serif;font-size:25px">
+			60
+		</div>
+
+		<!-- enemy health bar -->
+		<div style="position:relative;width:100%;border:4px inset white;">
+			<div style="background-color:#E7E5E4;height:40px"></div>
+			<div id="enemybar" style="background-color:#22C55E;height:40px;position:absolute;
+			top:0;bottom:0;right:0;left:0"></div>
+		</div>
+</div>
+<div id='displayText' style="position:absolute;align-items:center;justify-content:center;
+			top:-80;bottom:0;right:0;left:0;color:white;max-width:1026px;display:none;
+			font-family: 'Press Start 2P', cursive;font-size:30px">
+			
+			</div>
+
+<div id='Image' style="position:absolute;align-items:center;justify-content:center;
+			top:20;bottom:0;right:20;left:0;color:white;max-width:1026px;display:none;
+			font-family: 'Press Start 2P', cursive;font-size:30px">
+			<img src="http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/85d0894ad5ce8b0.png" style="width:150px;height:70px;cursor:pointer;"
+			 onclick="Refresh()">
+			 </div>
+<canvas></canvas>
+
+</div>
+<script type="text/javascript">
+	function Refresh() {
+  window.location.reload();
+}
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src='js/utilities.js'></script>
+<script type="text/javascript" src='js/classes.js'></script>
+<script src="index.js"></script>
+
+</body>
